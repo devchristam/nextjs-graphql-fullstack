@@ -2,7 +2,7 @@
 
 A Next.js full-stack boilerplate with type-safe end-to-end GraphQL API connection, authorization and authentication 
 
-- [demo]()
+- [demo](https://nextjs-graphql-fullstack-devchristam.vercel.app/)
 
 ## Features
 
