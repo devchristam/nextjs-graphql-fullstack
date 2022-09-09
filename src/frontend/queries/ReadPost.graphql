@@ -1,0 +1,12 @@
+query ReadPost($postId: String!) {
+	readPost(postId: $postId) {
+		id
+		title
+		content
+		createAt
+		createBy {
+			name
+			image
+		}
+	}
+}

@@ -1,0 +1,15 @@
+mutation EditPost($UpdatePostInput: UpdatePostInput!, $postId: String!) {
+	editPost(postId: $postId, UpdatePostInput: $UpdatePostInput) {
+		id
+		content
+		title
+		createAt
+		updateAt
+		createBy {
+			name
+		}
+		updateBy {
+			name
+		}
+	}
+}

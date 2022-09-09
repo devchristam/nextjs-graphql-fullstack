@@ -1,0 +1,12 @@
+mutation AddPost($CreatePostInput: CreatePostInput!) {
+	addPost(CreatePostInput: $CreatePostInput) {
+		id
+		title
+		content
+		createAt
+		createBy {
+			id
+			name
+		}
+	}
+}

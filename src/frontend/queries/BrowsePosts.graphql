@@ -1,0 +1,11 @@
+query BrowsePosts {
+	browsePosts {
+		id
+		title
+		createAt
+		createBy {
+			name
+			image
+		}
+	}
+}

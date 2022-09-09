@@ -1,0 +1,23 @@
+overwrite: true
+schema: "./src/generated/schema.gql"
+documents: "src/**/*.graphql"
+generates:
+  src/generated/codegenPreset.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+  src/generated/codegenReactQuery.ts:
+    preset: import-types
+    presetConfig:
+      typesPath: "./codegenPreset"
+    plugins:
+      - "typescript-react-query"
+    config:
+      withHooks: true
+      fetcher: "graphql-request"
+  src/generated/codegenGraphqlRequest.ts:
+    preset: import-types
+    presetConfig:
+      typesPath: "./codegenPreset"
+    plugins:
+      - "typescript-graphql-request"
