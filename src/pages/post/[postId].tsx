@@ -54,7 +54,7 @@ const Post: NextPageWithLayout<{ postId: string }> = ({ postId }) => {
 									{data?.readPost.createBy.name}
 								</div>
 								<div className="text-sm text-gray-500">
-									{data?.readPost.createAt}
+									{new Date(data?.readPost.createAt).toLocaleString('en-US')}
 								</div>
 							</div>
 						</div>
